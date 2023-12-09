@@ -50,3 +50,7 @@ Q.idea/sonarlint/securityhotspotstore/3/f/3f898c1969f5f2ed22652a4e2921638d45ad87
 Q.idea/sonarlint/securityhotspotstore/4/1/4140fd1b6586a7e115c9843d897c217c0f59fdec,5\e\5e97c8beb79bdcf0e14f180f6906c577062e4fd9
 W
 'src/abstraction/trafficLights/Main.java,3\c\3c70ab226fef9a67699d14c48c131a209c71ba2a
+T
+$src/abstraction/jediGalaxy/Main.java,5\1\515b3c44feef1780ccd2b5b5f769ced62d6d4462
+U
+%src/abstraction/greedyTimes/Main.java,e\e\eed326f65ed36123e849d410b90d0b74823a6c1d

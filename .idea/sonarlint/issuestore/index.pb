@@ -50,3 +50,7 @@ _
 /src/abstraction/trafficLights/TrafficLight.java,e\2\e2863ca4296aaff94294fd13b7dd6727bc3a9f25
 W
 'src/abstraction/trafficLights/Main.java,3\c\3c70ab226fef9a67699d14c48c131a209c71ba2a
+T
+$src/abstraction/jediGalaxy/Main.java,5\1\515b3c44feef1780ccd2b5b5f769ced62d6d4462
+U
+%src/abstraction/greedyTimes/Main.java,e\e\eed326f65ed36123e849d410b90d0b74823a6c1d

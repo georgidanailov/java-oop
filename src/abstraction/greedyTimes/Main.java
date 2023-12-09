@@ -81,7 +81,7 @@ public class Main {
     private static void printBagContents(Map<String, LinkedHashMap<String, Long>> bag){
         for (var entry : bag.entrySet()) {
             Long sumValues = sumValuesOfItemType(bag, entry.getKey());
-            System.out.println(String.format("<%s> $%s", entry.getKey(), sumValues));
+            System.out.printf("<%s> $%s%n", entry.getKey(), sumValues);
             entry.getValue().entrySet().stream().sorted((e1, e2) -> e2.getKey().compareTo(e1.getKey()))
                     .forEach(i -> System.out.println("##" + i.getKey() + " - " + i.getValue()));
         }

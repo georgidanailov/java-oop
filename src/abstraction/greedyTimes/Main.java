@@ -23,7 +23,7 @@ public class Main {
 
             String itemCategory = categorizeItem(name);
 
-            if (itemCategory.equals("") || exceedsBagCapacity(bag, bagCapacity, count)) {
+            if (itemCategory.isEmpty() || exceedsBagCapacity(bag, bagCapacity, count)) {
                 continue;
             }
             switch (itemCategory) {
@@ -46,7 +46,7 @@ public class Main {
             return CASH;
         } else if (name.toLowerCase().endsWith("gem")) {
             return GEM;
-        } else if (name.toLowerCase().equals("gold")) {
+        } else if (name.equalsIgnoreCase("gold")) {
             return GOLD;
         }
         return "";

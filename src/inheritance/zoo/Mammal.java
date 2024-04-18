@@ -1,2 +1,4 @@
-package inheritance.zoo;public class Mammal {
+package inheritance.zoo;
+
+public class Mammal {
 }

@@ -1,2 +1,4 @@
-package inheritance.demo;public class Engine {
+package inheritance.demo;
+
+public class Engine {
 }

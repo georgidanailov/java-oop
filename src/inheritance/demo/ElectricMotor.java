@@ -1,2 +1,4 @@
-package inheritance.demo;public class ElectricMotor {
+package inheritance.demo;
+
+public class ElectricMotor {
 }

@@ -1,2 +1,8 @@
-package inheritance.zoo;public class Reptile {
+package inheritance.zoo;
+
+public class Reptile extends Animal {
+
+    public Reptile(String name) {
+        super(name);
+    }
 }

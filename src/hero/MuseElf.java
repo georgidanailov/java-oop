@@ -1,4 +1,4 @@
-package inheritance.hero;
+package inheritance.demo.hero;
 
 public class MuseElf extends Elf {
     public MuseElf(String username, int level) {

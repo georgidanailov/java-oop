@@ -1,4 +1,4 @@
-package inheritance.zoo;
+package inheritance.demo.zoo;
 
 public class Reptile extends Animal {
 

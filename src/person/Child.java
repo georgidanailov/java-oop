@@ -1,4 +1,4 @@
-package inheritance.person;
+package inheritance.demo.person;
 
 public class Child extends Person{
     public Child(String name, int age) {

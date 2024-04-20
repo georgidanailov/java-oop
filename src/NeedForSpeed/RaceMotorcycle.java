@@ -1,4 +1,4 @@
-package inheritance.NeedForSpeed;
+package inheritance.demo.NeedForSpeed;
 
 public class RaceMotorcycle extends Motorcycle {
 

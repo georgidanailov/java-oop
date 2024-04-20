@@ -1,6 +1,6 @@
-package inheritance.restaurant.Food;
+package inheritance.demo.restaurant.Food;
 
-import inheritance.restaurant.Product;
+import inheritance.demo.restaurant.Product;
 import java.math.BigDecimal;
 
 public class Food extends Product {

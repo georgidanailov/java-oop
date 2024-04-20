@@ -1,4 +1,4 @@
-package inheritance.animals;
+package inheritance.demo.animals;
 
 import java.util.Scanner;
 

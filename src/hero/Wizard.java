@@ -1,4 +1,4 @@
-package inheritance.hero;
+package inheritance.demo.hero;
 
 public class Wizard extends Hero {
     public Wizard(String username, int level) {

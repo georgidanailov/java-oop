@@ -1,4 +1,4 @@
-package inheritance.animals;
+package inheritance.demo.animals;
 
 public class Kitten extends Cat {
 

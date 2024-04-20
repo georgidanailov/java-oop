@@ -1,4 +1,4 @@
-package inheritance.restaurant;
+package inheritance.demo.restaurant;
 
 public class Main {
 

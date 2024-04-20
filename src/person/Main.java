@@ -1,4 +1,4 @@
-package inheritance.person;
+package inheritance.demo.person;
 
 import java.util.Scanner;
 

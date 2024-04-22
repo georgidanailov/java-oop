@@ -1,42 +1,20 @@
 package interfacesAndAbstraction.carshop;
 
-public class Seat implements Car {
+public class Seat extends CarImpl implements Sellable{
 
-    private String model;
-    private String color;
-    private Integer horsePower;
-    private String countryProduced;
+    private Double price;
 
-    public Seat(String model, String color, Integer horsePower, String countryProduced) {
-        this.model = model;
-        this.color = color;
-        this.horsePower = horsePower;
-        this.countryProduced = countryProduced;
+    public Seat(String model, String color, Integer horsePower, String countryProduced, Double price) {
+        super(model, color, horsePower, countryProduced);
+        this.price = price;
     }
 
     @Override
-    public String getModel() {
-        return model;
+    public Double getPrice() {
+        return price;
     }
 
     @Override
-    public String getColor() {
-        return color;
-    }
-
-    @Override
-    public Integer getHorsePower() {
-        return horsePower;
-    }
-
-    @Override
-    public String countryProduced() {
-        return countryProduced;
-    }
-
-    @Override
-    public String toString() {
-        return String.format("This is %s produced in %s and have %d tires",
-                model, countryProduced, TIRES);
-    }
+    public String toString();
+    return super.toString() + System.lineSeparator()
 }

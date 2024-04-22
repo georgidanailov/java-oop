@@ -31,6 +31,6 @@ public class Car extends Vehicle implements Driveable {
     }
 
     public String getCarRemainingKm(int km) {
-        return "interfacesAndAbstraction.carshop.Car " + Driveable.getRemainingKm(km);
+        return "interfacesAndAbstraction.carshop.interfacesAndAbstraction.carshop.Car " + Driveable.getRemainingKm(km);
     }
 }

@@ -15,6 +15,8 @@ public class Seat extends CarImpl implements Sellable{
     }
 
     @Override
-    public String toString();
-    return super.toString() + System.lineSeparator()
+    public String toString() {
+        return super.toString() + System.lineSeparator() + "Leon sells for " + price;
+
+    }
 }

@@ -1,16 +1,9 @@
 package interfacesAndAbstraction.hello;
 
-public class Bulgarian implements Person {
-
-    private String name;
+public class Bulgarian extends PersonImpl implements Person {
 
     public Bulgarian(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String getName() {
-        return null;
+        super(name);
     }
 
     @Override

@@ -1,16 +1,9 @@
 package interfacesAndAbstraction.hello;
 
-public class Chinese implements Person {
-
-    private String name;
+public class Chinese extends PersonImpl implements Person {
 
     public Chinese(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String getName() {
-        return null;
+        super(name);
     }
 
     @Override

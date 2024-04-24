@@ -1,5 +1,4 @@
-import java.io.*;
-import java.util.*;
+package interfacesAndAbstraction.hackerrank;
 
 public class Solution {
     public static void main(String[] args) {

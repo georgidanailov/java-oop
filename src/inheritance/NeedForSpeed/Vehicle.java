@@ -15,7 +15,7 @@ o The drive method should have the functionality to reduce the fuel based on the
 The default fuel consumption for Vehicle is 1.25. Some of the classes have different default fuel consumption:
 · SportCar – DEFAULT_FUEL_CONSUMPTION = 10
 · RaceMotorcycle – DEFAULT_FUEL_CONSUMPTION = 8
-· interfacesAndAbstraction.carshop.interfacesAndAbstraction.carshop.Car – DEFAULT_FUEL_CONSUMPTION = 3
+· interfacesAndAbstraction.carshop.interfacesAndAbstraction.carshop.interfacesAndAbstraction.ferrari.Car – DEFAULT_FUEL_CONSUMPTION = 3
     */
     private static final double DEFAULT_FUEL_CONSUMPTION = 1.25;
     private double fuelConsumption;

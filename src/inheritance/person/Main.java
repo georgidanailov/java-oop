@@ -9,7 +9,7 @@ public class Main {
         String name = sc.nextLine();
         int age = Integer.parseInt(sc.nextLine());
 
-        Child child = new Child(name, age);
+        person.Child child = new person.Child(name, age);
 
         System.out.println(child.getName());
         System.out.println(child.getAge());

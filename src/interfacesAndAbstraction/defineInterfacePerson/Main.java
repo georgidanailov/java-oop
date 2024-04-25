@@ -1,28 +1,48 @@
 package interfacesAndAbstraction.defineInterfacePerson;
 
-import java.lang.reflect.Method;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Class[] citizenInterfaces = Citizen.class.getInterfaces();
-        if (Arrays.asList(citizenInterfaces).contains(Birthable.class)
-                && Arrays.asList(citizenInterfaces).contains(Identifiable.class)) {
-            Method[] methods = Birthable.class.getDeclaredMethods();
-            Method[] methods1 = Identifiable.class.getDeclaredMethods();
-            Scanner scanner = new Scanner(System.in);
-            String name = scanner.nextLine();
-            int age = Integer.parseInt(scanner.nextLine());
-            String id = scanner.nextLine();
-            String birthDate = scanner.nextLine();
-            Identifiable identifiable = new Citizen(name,age,id,birthDate);
-            Birthable birthable = new Citizen(name,age,id,birthDate);
-            System.out.println(methods.length);
-            System.out.println(methods[0].getReturnType().getSimpleName());
-            System.out.println(methods1.length);
-            System.out.println(methods1[0].getReturnType().getSimpleName());
-        }
-    }
+        Scanner scanner = new Scanner(System.in);
+        List<Birthable> birthableList = new ArrayList<>();
+        String input = scanner.nextLine();
 
+        while (!"End".equals(input)) {
+            String[] tokens = input.split("\\s+");
+            String object = tokens[0];
+
+            switch (object){
+                case "interfacesAndAbstraction.defineInterfacePerson.Citizen":
+                    //"interfacesAndAbstraction.defineInterfacePerson.Citizen {name} {age} {id} {birthdate}"
+                    String name = tokens[1];
+                    int age = Integer.parseInt(tokens[2]);
+                    String id = tokens[3];
+                    String birthdate = tokens[4];
+
+                    Citizen citizen = new Citizen(name, age, id, birthdate);
+                    birthableList.add(citizen);
+                    break;
+                case "interfacesAndAbstraction.defineInterfacePerson.Pet":
+                    //"interfacesAndAbstraction.defineInterfacePerson.Pet {name} {birthdate}"
+                    name = tokens[1];
+                    birthdate = tokens[2];
+
+                    Pet pet = new Pet(name, birthdate);
+                    birthableList.add(pet);
+                    break;
+            }
+
+
+            input = scanner.nextLine();
+        }
+
+        String year = scanner.nextLine();
+        birthableList.stream()
+                .filter(birthable -> birthable.getBirthDate().endsWith(year))
+                .forEach(birthable -> System.out.println(birthable.getBirthDate()));
+
+    }
 }

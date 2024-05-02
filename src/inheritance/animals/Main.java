@@ -1,4 +1,4 @@
-package animals;
+package inheritance.animals;
 
 import java.util.Scanner;
 
@@ -12,29 +12,29 @@ public class Main {
 
             try {
                 switch (line) {
-                    case "Dog":
+                    case "polymorphism.animals.Dog":
                         String[] tokens = scanner.nextLine().split("\\s+");
-                        Dog dog = new Dog(tokens[0], Integer.parseInt(tokens[1]), tokens[2]);
+                        animals.Dog dog = new animals.Dog(tokens[0], Integer.parseInt(tokens[1]), tokens[2]);
                         System.out.println(dog);
                         break;
-                    case "Cat":
+                    case "polymorphism.animals.polymorphism.wildFarm.Cat":
                         tokens = scanner.nextLine().split("\\s+");
-                        Cat cat = new Cat(tokens[0], Integer.parseInt(tokens[1]), tokens[2]);
+                        inheritance.animals.Cat cat = new inheritance.animals.Cat(tokens[0], Integer.parseInt(tokens[1]), tokens[2]);
                         System.out.println(cat);
                         break;
                     case "Frog":
                         tokens = scanner.nextLine().split("\\s+");
-                        Frog frog = new Frog(tokens[0], Integer.parseInt(tokens[1]), tokens[2]);
+                        animals.Frog frog = new animals.Frog(tokens[0], Integer.parseInt(tokens[1]), tokens[2]);
                         System.out.println(frog);
                         break;
                     case "Kitten":
                         tokens = scanner.nextLine().split("\\s+");
-                        Kitten kitten = new Kitten(tokens[0], Integer.parseInt(tokens[1]));
+                        inheritance.animals.Kitten kitten = new inheritance.animals.Kitten(tokens[0], Integer.parseInt(tokens[1]));
                         System.out.println(kitten);
                         break;
                     case "Tomcat":
                         tokens = scanner.nextLine().split("\\s+");
-                        Tomcat tomcat = new Tomcat(tokens[0], Integer.parseInt(tokens[1]));
+                        inheritance.animals.Tomcat tomcat = new inheritance.animals.Tomcat(tokens[0], Integer.parseInt(tokens[1]));
                         System.out.println(tomcat);
                         break;
                 }

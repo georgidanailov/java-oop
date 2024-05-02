@@ -1,6 +1,6 @@
-package animals;
+package inheritance.animals;
 
-public class Kitten extends Cat {
+ class Kitten extends Cat {
 
     private static final String GENDER = "Female";
 

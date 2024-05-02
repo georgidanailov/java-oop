@@ -1,8 +1,12 @@
-package animals;
+package inheritance.animals;
 
-public class Cat extends Animal {
+class Cat extends animals.Animal {
     public Cat(String name, int age, String gender) {
-        super(name, age, gender);
+        super();
+    }
+
+    public Cat() {
+
     }
 
     @Override
